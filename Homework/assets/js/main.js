@@ -104,3 +104,22 @@ function reverse(array) {
 }
 
 reverse(array6);
+
+//concat
+let array7=[
+    1,2,3,4,5,6
+];
+let array8=[
+    1,2,3,4,5,6,7
+];
+function concat(...nums) {
+    const result = [];
+    for (let i=0;i<nums.length;i++) {
+      for(let j=0; j<nums[i].length;j++){
+          result.push(nums[i][j]);
+      }
+    }
+    console.log(result)
+}
+
+concat(array7,array8);
